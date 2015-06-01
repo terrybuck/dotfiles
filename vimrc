@@ -284,6 +284,7 @@ if has('unix')
 
 	" Shut off preview window on PHP files
 	if (&ft=='php')
+		echop "Removing preview from completeopt"
 		let g:ycm_add_preview_to_completeopt=0
 	endif
 	" Alternatively..
