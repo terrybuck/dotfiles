@@ -156,6 +156,10 @@ Plugin 'godlygeek/tabular'
 " Show markers
 Plugin 'kshenoy/vim-signature'
 
+" Highlight error lines
+Plugin 'mh21/errormarker.vim'
+let &errorformat="%f:%l:%c: %t%*[^:]:%m,%f:%l: %t%*[^:]:%m," . &errorformat
+
 " Work with editorconfig files
 "Plugin 'editorconfig-vim'
 
