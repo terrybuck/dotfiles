@@ -66,9 +66,6 @@ if [[ "$(which tmux)" != "" ]]; then
 		git clone https://github.com/tmux-plugins/tpm ${h}/.tmux/plugins/tpm
 	fi
 fi
-if [[ "$(which screen)" != "" ]]; then
-	files+=('.screenrc')
-fi
 if [[ "$(which sqlite3)" != "" ]]; then
 	files+=('.sqliterc')
 fi
