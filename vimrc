@@ -215,12 +215,9 @@ if has('gui_running')
 	"set background=light
 	set background=dark
 
-	call <SID>RandColorScheme()
-else
-	if domain ==? 'school' || domain ==? 'ec'
-		colorscheme onedark
-	endif
+	" call <SID>RandColorScheme()
 endif
+colorscheme abra
 
 " OS Detection
 if is_win
