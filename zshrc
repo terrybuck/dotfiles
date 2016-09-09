@@ -48,19 +48,17 @@ if [[ -e ${HOME}/dotfiles/antigen/antigen.zsh ]]; then
 	# using putty, I'm probably connecting from Tinder(windows) to pof.. So
 	# only use blinks on pof.  Or figure out how to detect putty.
 	# Themes: robbyrussell, daveverwer candy clean pygalion, etc..
-	if [[ $(hostname) == "tinder" || $(hostname) == "grinder" ]]; then
-		# Set some preferences for the bullet train theme:
-		export BULLETTRAIN_CONTEXT_SHOW=true
-		export BULLETTRAIN_TIME_SHOW=false
-		export BULLETTRAIN_GIT_COLORIZE_DIRTY=true
-		export BULLETTRAIN_RUBY_SHOW=false
-		export BULLETTRAIN_GIT_BG="green"
-		export BULLETTRAIN_DIR_FG="black"
 
-		antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-	else
-		antigen theme blinks
-	fi
+	# Set some preferences for the bullet train theme:
+	export BULLETTRAIN_CONTEXT_SHOW=true
+	export BULLETTRAIN_TIME_SHOW=false
+	export BULLETTRAIN_GIT_COLORIZE_DIRTY=true
+	export BULLETTRAIN_RUBY_SHOW=false
+	export BULLETTRAIN_GIT_BG="green"
+	export BULLETTRAIN_DIR_FG="black"
+
+	antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+
 
 	# Auto update
 	antigen bundle unixorn/autoupdate-antigen.zshplugin
