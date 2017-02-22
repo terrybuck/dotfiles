@@ -58,7 +58,7 @@ if is_win==0 && domain !=? 'neptec-small'
 	Plug 'Valloric/YouCompleteMe'
 
 	" YCMGenerator - generates configs for YouCompleteMe
-	Plug 'rdnetto/YCM-Generator'
+	Plug 'rdnetto/YCM-Generator',{'branch': 'stable'}
 endif
 
 if domain !=? 'neptec-small'
