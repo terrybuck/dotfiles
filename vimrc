@@ -217,7 +217,7 @@ if has('gui_running')
 
 	" call <SID>RandColorScheme()
 endif
-colorscheme abra
+colorscheme onedark
 
 " OS Detection
 if is_win
