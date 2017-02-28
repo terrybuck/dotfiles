@@ -498,4 +498,4 @@ ab OPL2 OPAL2
 ab unqiue unique
 ab unique unique
 
-" vim: ts=3 sts=3 sw=3 noet nowrap :
+" vim: ts=3 sts=3 sw=3 noet nowrap ffs=unix :
