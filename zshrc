@@ -106,8 +106,12 @@ setopt no_share_history
 # Autocompletion with an arrow-key driven interface
 zstyle ':completion:*' menu select
 
-# Autocompletion of command line switches for aliases
-setopt completealiases
+# # Autocompletion of command line switches for aliases
+# setopt completealiases
+# This option allows me to tab complete branch names with the oh-my-zsh git aliases.
+# http://zsh.sourceforge.net/Doc/Release/Options.html#index-COMPLETEALIASES
+setopt nocomplete_aliases
+
 
 # Ignore untracked files for showing status on prompt
 export DISABLE_UNTRACKED_FILES_DIRTY=true
