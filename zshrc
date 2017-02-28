@@ -227,18 +227,6 @@ if [[ $(hostname) == "builder" || $(hostname) == "grinder" ]]; then
 		source /usr/share/zsh/functions/Completion/_ninja
 	fi;
 
-elif [[ "$(uname -o)" == "Cygwin" ]]; then
-	# This targets windows laptop at Neptec
-
-	# Modules isn't available here, so duplicate the most common aliases
-	if [[ "${modules_enabled}" == "0" ]]; then
-		base=${HOME}/workspace/opal2
-		ARCH=o2win64
-		export bld=${base}/build-3dri-${ARCH}-release
-		ws=${base}/3dri/Applications/OPAL2/3DRiWebScheduler
-		export wss=${ws}/src
-		export wsi=${ws}/include/3DRiWebScheduler
-	fi
 fi;
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
