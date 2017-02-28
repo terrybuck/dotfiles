@@ -208,10 +208,6 @@ if [[ $? == 1 ]]; then
 fi;
 
 
-if [[ -e $(which fuck 2>/dev/null) ]]; then
-	eval "$(thefuck --alias)"
-fi
-
 if [[ $(hostname) == "builder" || $(hostname) == "grinder" ]]; then
 	module use /usr/share/modules/modulefiles
 	module load modules
