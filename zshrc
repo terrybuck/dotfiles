@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 if [[ -e ${HOME}/dotfiles/doupdate.sh ]]; then
 	# Update the dotfiles repo to make sure we have all changes:
 	${HOME}/dotfiles/doupdate.sh
@@ -58,7 +60,6 @@ if [[ -e ${HOME}/dotfiles/antigen/antigen.zsh ]]; then
 	export BULLETTRAIN_DIR_FG="black"
 
 	antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-
 
 	# Auto update
 	antigen bundle unixorn/autoupdate-antigen.zshplugin
